@@ -1,0 +1,134 @@
+.css-1eqerk1 {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.css-1hdq21e {
+    width: 327px;
+    height: 327px;
+    margin-top: 43px;
+}
+
+.css-kmsf34-H6-interRegular-bold24 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: rgb(217, 217, 217);
+    fill: rgb(217, 217, 217);
+}
+
+.css-12nzv1h-Typography-interRegular-pRegular14 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(128, 128, 128);
+    fill: rgb(128, 128, 128);
+    width: 290px;
+    text-align: center;
+}
+
+
+.css-etrdj3-Root {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    border: 0px;
+    padding: 0px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 12px;
+    letter-spacing: 0.04em;
+    appearance: none;
+    background: none;
+    white-space: nowrap;
+    transition: background-color 0.1s ease 0s;
+    height: 40px;
+    min-width: 40px;
+    outline: none;
+    background-color: rgb(9, 168, 101);
+    border-radius: 8px;
+    box-shadow: rgb(9 167 101 / 50%) 0px 4px 224px, rgb(9 167 101 / 50%) 0px 4px 80px;
+    width: 295px;
+    height: 48px;
+    padding: 16px 24px;
+}
+
+.css-1bnvi13-Link-Root {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    border: 0px;
+    padding: 0px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 12px;
+    letter-spacing: 0.04em;
+    appearance: none;
+    background: none rgb(0, 131, 252);
+    white-space: nowrap;
+    transition: background-color 0.1s ease 0s;
+    height: 40px;
+    min-width: 40px;
+    outline: none;
+
+    background-color: rgba(9, 168, 101, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    width: 295px;
+    height: 48px;
+    padding: 16px 24px;
+}
+
+.css-ajmj03-Label {
+    display: inherit;
+    -webkit-box-pack: inherit;
+    -webkit-justify-content: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    -webkit-flex-direction: inherit;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit;
+    -webkit-align-items: inherit;
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    width: 100%;
+}
+
+.css-1v2lv4m-Typography-interRegular-buttonSemibold14 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    color: rgb(9, 168, 101);
+    fill: rgb(9, 168, 101);
+}
+
+.css-1c1t5j3-Typography-interRegular-buttonSemibold14 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-letter-spacing: 0.25px;
+    -moz-letter-spacing: 0.25px;
+    -ms-letter-spacing: 0.25px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+}

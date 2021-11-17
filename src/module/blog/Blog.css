@@ -1,0 +1,108 @@
+.css-15lj7bj {
+    min-height: 100%;
+    background-color: rgb(26, 26, 26);
+}
+
+.css-1eqerk1 {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.css-10n2zi8 {
+    height: 480px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.css-18xrz25 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-list, .slick-slider {
+    position: relative;
+    display: block;
+}
+
+.css-18xrz25 .slick-prev, .css-18xrz25 .slick-next {
+    z-index: 100;
+}
+
+.css-18xrz25 .slick-prev {
+    left: 16px;
+}
+
+.css-1ix74ly {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgba(51, 51, 51, 0.8);
+    box-shadow: rgb(0 0 0 / 25%) 0px 1px 2px, rgb(0 0 0 / 25%) 0px 0px 16px, rgb(255 255 255 / 10%) 0px 0.5px 0px inset;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.css-ke2i8n-Icon {
+    fill: rgb(255, 255, 255);
+}
+
+.css-18xrz25 .slick-list, .css-18xrz25 .slick-track, .css-18xrz25 .slick-slide > div {
+    height: 100%;
+}
+
+.slick-slider .slick-list, .slick-slider .slick-track {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list, .slick-slider {
+    position: relative;
+    display: block;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.s-1{
+    width: 12166px; opacity: 1; transform: translate3d(-1106px, 0px, 0px);
+}
+.s-2{
+    width: 1106px;
+}
+
+.s-3{
+    outline: none; width: 1106px;
+}
+
+.css-1wss36d {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%), url(https://object.pscloud.io/mycars-stage/photos/e5f33544-1f3c-47cd-bc3d-a9ead79b7cf8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

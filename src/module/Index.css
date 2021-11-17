@@ -1,0 +1,32 @@
+.css-1mdese6-Link-Root {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    border: 0px;
+    padding: 0px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 12px;
+    letter-spacing: 0.04em;
+    appearance: none;
+    background: none transparent;
+    white-space: nowrap;
+    transition: background-color 0.1s ease 0s;
+    height: 40px;
+    min-width: 40px;
+    outline: none;
+}
+
+.css-y5toya-Typography-interRegular-buttonSemibold14 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    color: rgb(128, 128, 128);
+    fill: rgb(128, 128, 128);
+}

@@ -1,0 +1,544 @@
+.css-1eqerk1 {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.css-q503ec {
+    min-height: 100%;
+    background-color: rgba(26,26,26,1);
+}
+
+.css-1wv7wbl {
+    max-width: 687px;
+    margin-top: 170px;
+    height: 428px;
+}
+
+.css-jfgno9 {
+    height: 100%;
+    background-image: linear-gradient(0deg, rgb(26, 26, 26) 8.03%, rgba(26, 26, 26, 0.2) 35.39%), url("./main_bg.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.css-1cpmey6 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -1.5px;
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+}
+
+.css-1l8dq94 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.css-5vic2x {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0.25px;
+    -moz-letter-spacing: 0.25px;
+    -ms-letter-spacing: 0.25px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.css-nkmipl {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0.12px;
+    -moz-letter-spacing: 0.12px;
+    -ms-letter-spacing: 0.12px;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+}
+.ml-4, .mx-4 {
+    margin-left: 1.5rem!important;
+}
+
+.css-wc4puz svg {
+    height: auto;
+}
+.css-1gxfsk1 {
+    background: rgba(128, 128, 128, 0.2);
+    backdrop-filter: blur(40px);
+    flex-direction: row;
+    padding: 32px;
+    height: 136px;
+    border-radius: 16px;
+}
+
+.css-1h50w6t {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(128, 128, 128);
+    fill: rgb(128, 128, 128);
+}
+
+.css-111zgli {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #D9D9D9;
+    fill: #D9D9D9;
+}
+
+.css-lq0nqo {
+    margin: 160px 0px;
+    flex-direction: row;
+}
+
+.css-323jwx {
+    margin-left: 87px;
+}
+
+.css-1mwacuh {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #D9D9D9;
+    fill: #D9D9D9;
+}
+
+.css-1ksygpu {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0.25px;
+    -moz-letter-spacing: 0.25px;
+    -ms-letter-spacing: 0.25px;
+    letter-spacing: 0.25px;
+    color: #808080;
+    fill: #808080;
+}
+
+.css-yrvz1a {
+    min-width: 24px;
+}
+.ml-2, .mx-2 {
+    margin-left: .5rem!important;
+}
+
+.css-bncp82 {
+    border-radius: 16px;
+    margin-bottom: 160px;
+    background: rgba(128, 128, 128, 0.1);
+    max-width: 646px;
+    min-width: 646px;
+    padding: 32px;
+}
+
+.css-ocxe0h {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #D9D9D9;
+    fill: #D9D9D9;
+    margin-bottom: 32px;
+}
+
+.css-60828r {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #D9D9D9;
+    fill: #D9D9D9;
+}
+
+.css-12iiuo3 {
+    position: relative;
+    width: 100%;
+    max-height: 56px;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    border: 2px solid rgba(128,128,128,0.4);
+    background: rgba(51,51,51,0.8);
+}
+
+.css-12iiuo3 input {
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    -webkit-transition: border-bottom-color 0.25s;
+    transition: border-bottom-color 0.25s;
+    border-radius: inherit;
+    background: transparent;
+    outline: none;
+    color: #E5E5E5;
+    font-size: 16px;
+}
+
+.css-j7iiqa {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #808080;
+    fill: #808080;
+}
+
+.css-40pvfp {
+    background: rgba(128, 128, 128, 0.1);
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.css-dok1p2 {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    border: 0px;
+    padding: 0px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    appearance: none;
+    background: none transparent;
+    white-space: nowrap;
+    transition: background-color 0.1s ease 0s;
+    min-width: 40px;
+    outline: none;
+    width: 78px;
+    border-radius: 0px;
+    height: 56px;
+}
+
+
+.css-1h50w6t {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(128, 128, 128);
+    fill: rgb(128, 128, 128);
+}
+
+.css-y256s4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #808080;
+    fill: #808080;
+}
+
+.input-c{
+    margin-top:18px
+}
+
+.css-vqnpgf {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    border: 0px;
+    padding: 0px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    appearance: none;
+    background: none rgb(0, 131, 252);
+    white-space: nowrap;
+    transition: background-color 0.1s ease 0s;
+    min-width: 40px;
+    outline: none;
+    width: 78px;
+    border-radius: 0px;
+    height: 56px;
+}
+
+.css-1evn2ph {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+}
+
+.css-12iiuo3 label {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: #808080;
+    -webkit-transform: translate(0,8px) scale(1);
+    -ms-transform: translate(0,8px) scale(1);
+    transform: translate(0,8px) scale(1);
+    -webkit-transition: -webkit-transform 200ms cubic-bezier(0,0,0.2,1) 0ms;
+    -webkit-transition: transform 200ms cubic-bezier(0,0,0.2,1) 0ms;
+    transition: transform 200ms cubic-bezier(0,0,0.2,1) 0ms;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+}
+.css-16m0fyf {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+}
+
+.css-q9nwxv {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E5E5E5;
+    fill: #E5E5E5;
+}
+
+.css-1gq47za {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #E5E5E5;
+    fill: #E5E5E5;
+}
+
+
+.css-nsf88d {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #808080;
+    fill: #808080;
+}
+
+.css-17mgu76 {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    border: 0px;
+    padding: 0px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 12px;
+    letter-spacing: 0.04em;
+    appearance: none;
+    background: none rgba(128, 128, 128, 0.2);
+    white-space: nowrap;
+    transition: background-color 0.1s ease 0s;
+    outline: none;
+    max-width: 177px;
+    min-width: 177px;
+    height: 48px;
+}
+
+.css-wc4puz {
+    display: inherit;
+    -webkit-box-pack: inherit;
+    -webkit-justify-content: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    -webkit-flex-direction: inherit;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit;
+    -webkit-align-items: inherit;
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    width: 100%;
+}
+
+.css-bm4u3z {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-letter-spacing: 0.25px;
+    -moz-letter-spacing: 0.25px;
+    -ms-letter-spacing: 0.25px;
+    letter-spacing: 0.25px;
+    color: rgba(128,128,128,0.6);
+    fill: rgba(128,128,128,0.6);
+}
+
+.css-wc4puz svg {
+    height: auto;
+}
+
+.css-1mwacuh {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #D9D9D9;
+    fill: #D9D9D9;
+}
+
+.css-1nutzmz {
+    margin-top: 64px;
+}
+
+.css-19zv1dk {
+    max-width: 260px;
+    min-width: 260px;
+    margin-bottom: 80px;
+}
+
+.css-3rn1k6 {
+    padding: 16px;
+    background: rgba(0,142,245,0.2);
+    border-radius: 16px;
+}
+
+.css-1uumn5i {
+    margin: 0px;
+    border: 0px;
+    background-color: rgba(0, 142, 245, 0.2);
+    height: 1px;
+    width: 100%;
+}   
+
+.css-9saldq {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    color: #0083FC;
+    fill: #0083FC;
+}
+.css-1ug4kil {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    border: 0px;
+    padding: 0px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 12px;
+    letter-spacing: 0.04em;
+    appearance: none;
+    background: none rgb(0, 131, 252);
+    white-space: nowrap;
+    transition: background-color 0.1s ease 0s;
+    outline: none;
+    max-width: 191px;
+    min-width: 191px;
+    height: 48px;
+}
+.css-hudyce {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-letter-spacing: 0.25px;
+    -moz-letter-spacing: 0.25px;
+    -ms-letter-spacing: 0.25px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+}
+

@@ -1,0 +1,79 @@
+.css-1eqerk1 {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.sale-1{
+    padding: 0px 90px;
+}
+
+.css-1g4jzk3-Typography {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(217, 217, 217);
+    fill: rgb(217, 217, 217);
+}
+
+.css-12nzv1h-Typography-interRegular-pRegular14 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(128, 128, 128);
+    fill: rgb(128, 128, 128);
+}
+
+.css-1wvp1n7-List {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    scroll-margin: 0px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.sale-2{
+
+    width: 254px;
+    scroll-snap-align: start;
+}
+
+.sale-3{
+
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    border-radius: 16px;
+}
+
+
+.css-kmsf34-H6-interRegular-bold24 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: rgb(217, 217, 217);
+    fill: rgb(217, 217, 217);
+
+    transition: opacity 300ms ease-in-out 0s;
+    opacity: 1;
+}
+
+.css-12nzv1h-Typography-interRegular-pRegular14 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(128, 128, 128);
+    fill: rgb(128, 128, 128);
+
+    transition: opacity 300ms ease-in-out 0s;
+    opacity: 1;
+}

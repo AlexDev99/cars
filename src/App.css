@@ -1,3 +1,8 @@
+.css-15lj7bj {
+  min-height: 100%;
+  background-color: rgb(26, 26, 26);
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: rgb(217, 217, 217);
+  fill: rgb(217, 217, 217);
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+.css-18lgibr {
+  min-height: 100%;
+  background-color: rgb(26, 26, 26);
+  overflow: hidden;
+  height: 100%;
 }
