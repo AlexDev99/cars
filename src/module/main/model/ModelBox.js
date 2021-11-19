@@ -1,4 +1,6 @@
 import './css/ModelBox.css'
+import { IMaskInput } from 'react-imask';
+
 
 export function ModelBox({ visible = false, onClose }) {
 
@@ -18,9 +20,17 @@ export function ModelBox({ visible = false, onClose }) {
                                     <div>
                                         <h4 color="#D9D9D9" class="css-5j2ao7-H4-interRegular-bold40 e1c33kzw5">Авторизация</h4>
                                         <p typography="p_regular_14" color="#BFBFBF" class="css-ge2upr-Typography-interRegular-pRegular14 e1c33kzw0">Введите номер телефона, на него будет выслан одноразовый SMS-код для авторизации</p>
-                                        <div class="css-178yklu"><button bgcolor="rgba(51, 51, 51, 0.8)" color="#E5E5E5" class="css-pu9f8t-Input e186zcg20">
-                                            <input type="tel" className='s-2' id="inputPass" value="" autocomplete="off" />
-                                            <label for="inputPass">Введите номер телефона</label></button>
+                                        <div class="css-178yklu">
+                                            <IMaskInput
+                                                color="#E5E5E5"
+                                                placeholder='Введите номер телефона'
+                                                bgcolor="rgba(51, 51, 51, 0.8)"
+                                                className='s-2 css-pu9f8t-Input mask e186zcg20'
+                                                mask="(000) 000-000000"
+                                                definitions={{
+                                                    '#': /[1-9]/,
+                                                }}
+                                            />
                                         </div>
                                     </div>
                                     <div>

@@ -99,7 +99,10 @@ button, input {
     color: rgb(229, 229, 229);
     font-size: 16px;
 }
-
+.mask{
+    color: rgb(229, 229, 229);
+    font-size: 16px;
+}
 .css-1jhvuix-ModalWrapper {
     overflow: hidden;
     position: fixed;
