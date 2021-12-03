@@ -1,9 +1,15 @@
 import './css/ModelBox.css'
 import { IMaskInput } from 'react-imask';
+import { useState } from 'react';
 
 
 export function ModelBox({ visible = false, onClose }) {
 
+    const [phone,setPhone] = useState("")
+    const handleChange = () =>{
+        setPhone(phone)
+    }
+    console.log(phone)
     return (
         <div>
             {visible == true &&
@@ -23,6 +29,8 @@ export function ModelBox({ visible = false, onClose }) {
                                         <div class="css-178yklu">
                                             <IMaskInput
                                                 color="#E5E5E5"
+                                                value={phone}
+                                                onChange={handleChange}
                                                 placeholder='Введите номер телефона'
                                                 bgcolor="rgba(51, 51, 51, 0.8)"
                                                 className='s-2 css-pu9f8t-Input mask e186zcg20'
@@ -39,7 +47,8 @@ export function ModelBox({ visible = false, onClose }) {
                                             <span class="css-ajmj03-Label easdwy10">
                                                 <div class="flex-grow-1 justify-content-center">
                                                     <p typography="other_semibold_14" color="rgba(128, 128, 128, 0.6)" class="css-1y2s2kc-Typography-interRegular-buttonSemibold14 e1c33kzw0">Далее</p>
-                                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="css-ntvt12-Icon">
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="css-ntvt12-Icon">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2929 4.29289C11.9024 4.68342 11.9024 5.31658 12.2929 5.70711L17.5858 11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H17.5858L12.2929 18.2929C11.9024 18.6834 11.9024 19.3166 12.2929 19.7071C12.6834 20.0976 13.3166 20.0976 13.7071 19.7071L20.7071 12.7071C21.0976 12.3166 21.0976 11.6834 20.7071 11.2929L13.7071 4.29289C13.3166 3.90237 12.6834 3.90237 12.2929 4.29289Z">
                                                     </path>
                                                 </svg>

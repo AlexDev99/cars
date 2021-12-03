@@ -1,0 +1,165 @@
+.css-bkcazq-ModalBox {
+    height: 848px;
+    width: 584px;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+}
+
+.mark-box-1{
+    z-index: 1030;
+    background: rgb(26, 26, 26);
+    height: 56px;
+    border-radius: 16px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.css-rswufz {
+    min-width: 384px;
+    max-width: 384px;
+    flex: 1 0 0px;
+    overflow: auto;
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 100px;
+}
+
+.css-5j2ao7-H4-interRegular-bold40 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: rgb(217, 217, 217);
+    fill: rgb(217, 217, 217);
+}
+
+.css-2x0y3x-Input {
+    position: relative;
+    width: 100%;
+    max-height: 56px;
+    border-radius: 8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    background: rgba(128, 128, 128, 0.1);
+}
+
+.svg-1{
+    left: 6px;
+    top: 6px;
+}
+
+.css-zcgqjf-Icon {
+    fill: whitesmoke;
+}
+.css-1qn3rue {
+    height: 692px;
+}
+
+.css-2x0y3x-Input input {
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    transition: border-bottom-color 0.25s ease 0s;
+    border-radius: inherit;
+    background: transparent;
+    outline: none;
+    color: rgb(229, 229, 229);
+    font-size: 16px;
+}
+
+.input-mark{
+    margin-top: 0px; padding-left: 2rem;
+}
+
+.css-1jhvuix-ModalWrapper {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease-in-out 0s;
+    opacity: 1;
+    display: block;
+    z-index: 999;
+}
+
+.css-2x0y3x-Input input {
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    transition: border-bottom-color 0.25s ease 0s;
+    border-radius: inherit;
+    background: transparent;
+    outline: none;
+    color: rgb(229, 229, 229);
+    font-size: 16px;
+}
+
+.css-2x0y3x-Input label {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    color: rgb(128, 128, 128);
+    transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    transform-origin: left top;
+}
+
+.mr-3, .mx-3 {
+    margin-right: 1rem!important;
+}
+
+.overflow {
+    overflow: auto;
+}
+.css-1mw621w-List-noScrollbarStyle {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -ms-overflow-style: none;
+    -webkit-scrollbar-width: none;
+    -moz-scrollbar-width: none;
+    -ms-scrollbar-width: none;
+    scrollbar-width: none;
+}
+
+.css-1uhrgff-GeneralItem {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+}
+
+.css-6kdy42-Typography-interRegular-buttonMedium16 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: rgb(229, 229, 229);
+    fill: rgb(229, 229, 229);
+}
+
+.css-1c65jr6-Typography-interRegular-buttonMedium16 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: rgb(191, 191, 191);
+    fill: rgb(191, 191, 191);
+}

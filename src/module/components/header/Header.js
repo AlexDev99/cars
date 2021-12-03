@@ -73,6 +73,10 @@ export function Header() {
                                         <span className="css-ajmj03-Label easdwy10"><p typography="p_regular_14" color="#E5E5E5" className="css-18e0jtp-Typography-interRegular-pRegular14 e1c33kzw0">Войти</p>
                                         </span>
                                     </button>
+                                    <button mode="dark" className="px-0 css-uw4g9o-Root e7wkbvf0" size="40" onClick={() => setModal(true)}>
+                                        <span className="css-ajmj03-Label easdwy10"><p typography="p_regular_14" color="#E5E5E5" className="css-18e0jtp-Typography-interRegular-pRegular14 e1c33kzw0">Войти</p>
+                                        </span>
+                                    </button>
                                 </div>
                                 <ModelBox
                                     visible={isModal}
