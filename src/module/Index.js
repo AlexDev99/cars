@@ -23,9 +23,9 @@ function Index() {
               <div className='d-flex flex-row align-items-center flex-grow-1 h-100 mr-4'>
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center'>
-                    <a className='ml-4 mr-0 mr-md-2 css-nn640c ezl9qcz0'>
-                      <img src={car} alt="car" />
-                    </a>
+                  <NavLink className='ml-4 mr-0 mr-md-2 css-nn640c ezl9qcz0 color-text' to='/'>
+                                            CarsKG
+                  </NavLink>
                   </div>
                 </div>
                 <div className="d-flex ml-4 h-100">
