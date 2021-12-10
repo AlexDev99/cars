@@ -9,7 +9,7 @@ export function Routers() {
             <Route path="/credit" element={<Finance />} />
             <Route path="/credit_announcement" element={<CreateAnnouncement />} />
             <Route path="/sale" element={<Sale />} />
-            <Route path="/car/1/" element={<Car />} />
+            <Route path="/car/:id/" element={<Car />} />
         </Routes>
     )
 }

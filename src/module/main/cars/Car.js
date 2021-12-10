@@ -1,7 +1,29 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import './Car.css'
 
 
 export function Car() {
+
+    const { id } = useParams();
+
+
+    const [car, setCar] = useState({})
+
+    useEffect(() => {
+        axios
+            .get(`https://auto-leasing-bank.herokuapp.com/api/auto/${id}/`)
+            .then(response => {
+                setCar(response.data)
+            })
+            .catch(error => {
+                console.log(error)
+            });
+    }, [])
+
+    console.log(car)
+
     return (
         <div className='pt-3 css-1eqerk1'>
             <div className='d-flex justify-content-end mb-1 mb-md-2'>
@@ -10,8 +32,8 @@ export function Car() {
             <div className='row css-5uk08r'>
                 <div className='w-100 d-flex justify-content-end mt-4 px-3'>
                     <div className='d-flex'>
-                        <p typography="p_regular_12" color="#808080" class=" css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0">Опубликовано: 11 ноября, Усть-Каменогорск</p>
-                        <div class="d-flex ml-3 align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="css-zcgqjf-Icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5327 5.10183C10.9289 5.92805 9.11419 8 6.0001 8C2.88601 8 1.07132 5.92805 0.4675 5.10183C-0.0139053 4.44313 -0.0139069 3.55687 0.467499 2.89817C1.07132 2.07195 2.88601 0 6.0001 0C9.11419 0 10.9289 2.07195 11.5327 2.89817C12.0141 3.55687 12.0141 4.44313 11.5327 5.10183ZM10.4562 4.3151C10.5952 4.12498 10.5952 3.87502 10.4562 3.6849C9.94049 2.97923 8.47259 1.33333 6.0001 1.33333C3.52761 1.33333 2.05971 2.97923 1.54399 3.6849C1.40504 3.87502 1.40504 4.12498 1.54399 4.3151C2.05971 5.02077 3.52761 6.66667 6.0001 6.66667C8.47259 6.66667 9.94049 5.02077 10.4562 4.3151Z" fill="#808080"></path><path d="M8.0001 4C8.0001 5.10457 7.10467 6 6.0001 6C4.89553 6 4.0001 5.10457 4.0001 4C4.0001 2.89543 4.89553 2 6.0001 2C7.10467 2 8.0001 2.89543 8.0001 4Z" fill="#808080"></path></svg><p typography="p_regular_12" color="#808080" class="ml-1 css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0">4 395</p></div>
+                        {/* <p typography="p_regular_12" color="#808080" class=" css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0">Опубликовано: 11 ноября, Усть-Каменогорск</p> */}
+                        {/* <div class="d-flex ml-3 align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="css-zcgqjf-Icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5327 5.10183C10.9289 5.92805 9.11419 8 6.0001 8C2.88601 8 1.07132 5.92805 0.4675 5.10183C-0.0139053 4.44313 -0.0139069 3.55687 0.467499 2.89817C1.07132 2.07195 2.88601 0 6.0001 0C9.11419 0 10.9289 2.07195 11.5327 2.89817C12.0141 3.55687 12.0141 4.44313 11.5327 5.10183ZM10.4562 4.3151C10.5952 4.12498 10.5952 3.87502 10.4562 3.6849C9.94049 2.97923 8.47259 1.33333 6.0001 1.33333C3.52761 1.33333 2.05971 2.97923 1.54399 3.6849C1.40504 3.87502 1.40504 4.12498 1.54399 4.3151C2.05971 5.02077 3.52761 6.66667 6.0001 6.66667C8.47259 6.66667 9.94049 5.02077 10.4562 4.3151Z" fill="#808080"></path><path d="M8.0001 4C8.0001 5.10457 7.10467 6 6.0001 6C4.89553 6 4.0001 5.10457 4.0001 4C4.0001 2.89543 4.89553 2 6.0001 2C7.10467 2 8.0001 2.89543 8.0001 4Z" fill="#808080"></path></svg><p typography="p_regular_12" color="#808080" class="ml-1 css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0">4 395</p></div> */}
                     </div>
                 </div>
                 <hr color="rgba(128, 128, 128, 0.1)" class="mb-3 mt-1 css-1jdw7xk-Divider-Divider e17dekne0" direction="horizontal"></hr>
@@ -67,9 +89,15 @@ export function Car() {
                             <div class="css-a4voe"><p color="#808080" class="css-ohcmng-P-interRegular-pRegular16 e1c33kzw1">Цвет</p><div class="d-flex align-items-center"><h4 color="#E5E5E5" class="css-1uqeuzh-H5-interRegular-bold32 e1c33kzw6">Серый</h4></div></div>
                         </div>
                     </section>
+                    <section class="css-y1gt6f">
+                        <h4 color="#D9D9D9" class="css-kmsf34-H6-interRegular-bold24 e1c33kzw7">Описание</h4>
+                        <p class="mt-2 css-qesal0-P-interRegular-pRegular16 e1c33kzw1" color="#BFBFBF">
+                            {car.description}
+                        </p>
+                    </section>
                 </div>
                 <div className='col-4'>
-                    <div><p color="#E5E5E5" class="css-ygm395-P-interRegular-pRegular16 e1c33kzw1">Haval F7 2021</p><h4 color="#E5E5E5" class="css-1uqeuzh-H5-interRegular-bold32 e1c33kzw6">10 190 000 ₸</h4><div class="d-flex align-items-center mt-2 css-1btmnfr"><p color="#000000" class="css-1thewwn-P-interSemiBold-sub1 e1c33kzw1">от</p><h4 class="ml-1 css-5mlk19-H6-interRegular-bold24 e1c33kzw7">131 397</h4><p class="ml-1 css-1thewwn-P-interSemiBold-sub1 e1c33kzw1" color="#000000">₸/мес</p></div></div>
+                    <div><p color="#E5E5E5" class="css-ygm395-P-interRegular-pRegular16 e1c33kzw1">{car.brand}</p><h4 color="#E5E5E5" class="css-1uqeuzh-H5-interRegular-bold32 e1c33kzw6">{car.price} $</h4><div class="d-flex align-items-center mt-2 css-1btmnfr"><p color="#000000" class="css-1thewwn-P-interSemiBold-sub1 e1c33kzw1">от</p><h4 class="ml-1 css-5mlk19-H6-interRegular-bold24 e1c33kzw7">1310</h4><p class="ml-1 css-1thewwn-P-interSemiBold-sub1 e1c33kzw1" color="#000000">$/мес</p></div></div>
                     <hr color="rgba(128, 128, 128, 0.1)" class="mt-4 mb-4 css-1jdw7xk-Divider-Divider e17dekne0" direction="horizontal"></hr>
                     <div>
                         <div class="d-flex flex-wrap align-items-center">
@@ -78,7 +106,7 @@ export function Car() {
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6663 8.00004C14.6663 11.6819 11.6816 14.6667 7.99967 14.6667C4.31778 14.6667 1.33301 11.6819 1.33301 8.00004C1.33301 4.31814 4.31778 1.33337 7.99967 1.33337C11.6816 1.33337 14.6663 4.31814 14.6663 8.00004ZM3.80334 7.52971C3.54358 7.78947 3.54358 8.21061 3.80334 8.47037L6.66634 11.3334L12.1963 5.80338C12.4562 5.54353 12.4569 5.12247 12.198 4.86171C11.9378 4.59965 11.5142 4.5989 11.253 4.86005L6.66634 9.44671L4.74333 7.52906C4.48347 7.26992 4.06283 7.27022 3.80334 7.52971Z">
                                     </path>
                                 </svg>
-                                <p color="#808080" typography="p_regular_14" class="css-12nzv1h-Typography-interRegular-pRegular14 e1c33kzw0">В наличии</p>
+                                {/* <p color="#808080" typography="p_regular_14" class="css-12nzv1h-Typography-interRegular-pRegular14 e1c33kzw0">В наличии</p> */}
                             </div>
                         </div>
                         <hr color="rgba(128, 128, 128, 0.1)" class="mt-4 mb-4 css-1jdw7xk-Divider-Divider e17dekne0" direction="horizontal"></hr>
@@ -164,7 +192,7 @@ export function Car() {
                                 <p class="text-uppercase mb-2 mt-4 css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0" color="#808080" typography="p_regular_12">рассчитать автокредит</p>
                                 <div className='p-3 css-1y12nur'>
                                     <button class="my-3 css-171ojx-NumberInput e1azpczr0" type="number" bordercolor="rgba(128, 128, 128, 0.4)" bgcolor="rgba(51, 51, 51, 0.8)" color="#E5E5E5">
-                                        <input className='el-4' disabled="" autocomplete="off" id="carPrice" value="10 190 000" />
+                                        <input className='el-4' disabled="" autocomplete="off" id="carPrice" defaultValue={car.price} />
                                         <label for="carPrice">Стоимость автомобиля</label>
                                     </button>
                                 </div>
@@ -267,7 +295,7 @@ export function Car() {
                                     </button>
                                 </div>
                                 <p color="#808080" typography="p_regular_12" class="css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0">Ежемесячный платеж*</p>
-                                <h4 color="#E5E5E5" class="css-wzbl2m-H4-interRegular-bold40 e1c33kzw5">131 397 ₸/мес</h4>
+                                <h4 color="#E5E5E5" class="css-wzbl2m-H4-interRegular-bold40 e1c33kzw5">1310 $/мес</h4>
                                 <button mode="dark" color="#FFFFFF" class="mt-4 css-yz72mo-Root e7wkbvf0" size="40"><span class="css-ajmj03-Label easdwy10">Подать заявку</span></button>
                             </div>
                         </div>

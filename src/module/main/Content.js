@@ -1,7 +1,8 @@
 import { Cars } from './cars/Cars'
 import './Content.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { MarkBox } from './model/MarkBox'
+import axios from 'axios'
 
 export function Content() {
 
@@ -9,6 +10,19 @@ export function Content() {
     const [isModal, setModal] = useState(false)
     const onClose = () => setModal(false)
 
+
+   const [cars,setCars] = useState([])
+
+   useEffect(()=>{
+       axios
+       .get("https://auto-leasing-bank.herokuapp.com/api/auto/")
+       .then(response => {
+        setCars(response.data)
+       })
+       .catch(error => {
+         console.log(error)
+       });  
+   },[])
 
     return (
         <div>
@@ -60,10 +74,10 @@ export function Content() {
                             </div>
                             <div class="d-flex align-items-end justify-content-between mt-5">
                                 <h1 typography="h_bold_24" color="#D9D9D9" class="css-n0bdzv-Typography e1c33kzw0">Покупка авто </h1>
-                                <p typography="p_regular_16" class="align-self-end css-gfcd9q-Typography-interRegular-pRegular16 e1c33kzw0" color="#808080">33 045 объявлений</p>
+                                <p typography="p_regular_16" class="align-self-end css-gfcd9q-Typography-interRegular-pRegular16 e1c33kzw0" color="#808080">{cars.length} объявлений</p>
                             </div>
                         </div>
-                        <Cars />
+                        <Cars cars = {cars}/>
                     </section>
                 </div>
             </div>

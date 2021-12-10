@@ -7,11 +7,14 @@ import { useState } from 'react';
 async function loginUser(credentials) {
     console.log(credentials)
     return fetch('https://auto-leasing-bank.herokuapp.com/api/login/', {
-        credentials: 'include',
+        credentials: "same-origin",
         method: 'POST',
         headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json'
+            "Content-Type":"application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Credentials": "true",
+            "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+            "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
           },
         body: JSON.stringify({phone:"+996770360239",code:"12345"})
     })
