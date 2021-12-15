@@ -20,7 +20,7 @@ export function CreateAnnouncement() {
                         <span mode="dark" class="mt-2 css-1bnvi13-Link-Root e1v39g080" href="/prodatseychas" id="prodatseychas_2" type="button" size="40">
                             <span class="css-ajmj03-Label easdwy10">
                                 <p typography="other_semibold_14" color="rgba(9, 168, 101, 1)" class="css-1v2lv4m-Typography-interRegular-buttonSemibold14 e1c33kzw0">
-                                    <NavLink to='/'>Продать авто сейчас</NavLink>
+                                    <NavLink to='/create'>Продать авто сейчас</NavLink>
                                 </p>
                             </span>
                         </span>

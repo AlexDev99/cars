@@ -2,17 +2,21 @@ import { Footer } from "./components/footer/Footer";
 import './components/header/Header.css'
 import './Index.css'
 
-import car from './components/header/logo.svg'
 import { useState } from 'react'
 import { ModelBox } from './main/model/ModelBox'
 import { Routers } from "./components/routes/Routes";
-import { NavLink, Router } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { RegisterBox } from "./main/model/RegisterBox";
 
 function Index() {
 
 
   const [isModal, setModal] = useState(false)
+  const [register, setRegister] = useState(false)
+
   const onClose = () => setModal(false)
+  const onCloseRegister = () => setRegister(false)
+
 
   return (
     <div className="Index">
@@ -86,10 +90,19 @@ function Index() {
                       <p typography="p_regular_14" color="#E5E5E5" className="css-18e0jtp-Typography-interRegular-pRegular14 e1c33kzw0">Войти</p>
                     </span>
                   </button>
+                  <button mode="dark" className="px-0 css-uw4g9o-Root e7wkbvf0" size="40" onClick={() => setRegister(true)}>
+                    <span className="css-ajmj03-Label easdwy10">
+                      <p typography="p_regular_14" color="#E5E5E5" className="css-18e0jtp-Typography-interRegular-pRegular14 e1c33kzw0">/Регистрация</p>
+                    </span>
+                  </button>
                 </div>
                 <ModelBox
                   visible={isModal}
                   onClose={onClose}
+                />
+                <RegisterBox 
+                  visible={register}
+                  onClose={onCloseRegister}
                 />
               </div>
             </div>

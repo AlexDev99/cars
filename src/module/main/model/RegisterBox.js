@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 async function loginUser(credentials) {
-    return fetch('https://auto-leasing-bank.herokuapp.com/api/login/', {
+    return fetch('https://auto-leasing-bank.herokuapp.com/api/register/', {
         credentials: "same-origin",
         method: 'POST',
         headers: {
@@ -15,27 +15,25 @@ async function loginUser(credentials) {
             "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
             "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
           },
-        body: JSON.stringify({phone:credentials.phone,code:credentials.code})
+        body: JSON.stringify({phone:credentials.phone})
     })
-    .then(response => console.log(response.data))
-
+        .then(data => console.log(data.json()))
 }
 
 
-export function ModelBox({ visible = false, onClose }) {
+export function RegisterBox({ visible = false, onClose }) {
 
     const [phone, setPhone] = useState()
 
-    const [code, setCode] = useState()
+    // const [code, setCode] = useState()
 
-    const [data,setData] = useState()
+
 
     function handleSubmit(event) {
         event.preventDefault()
-        let user = { phone, code }
+        let user = { phone }
         loginUser(user)
     }
-
 
     return (
         <div>
@@ -52,7 +50,7 @@ export function ModelBox({ visible = false, onClose }) {
                                 <div id="0" className="h-100">
                                     <div className="d-flex flex-column h-100 justify-content-between">
                                         <div>
-                                            <h4 color="#D9D9D9" class="css-5j2ao7-H4-interRegular-bold40 e1c33kzw5">Авторизация</h4>
+                                            <h4 color="#D9D9D9" class="css-5j2ao7-H4-interRegular-bold40 e1c33kzw5">Регистрация</h4>
                                             <p typography="p_regular_14" color="#BFBFBF" class="css-ge2upr-Typography-interRegular-pRegular14 e1c33kzw0">Введите номер телефона, на него будет выслан одноразовый SMS-код для авторизации</p>
                                             <div class="css-178yklu">
                                                 <IMaskInput
@@ -68,7 +66,7 @@ export function ModelBox({ visible = false, onClose }) {
                                                     }}
                                                 />
                                             </div>
-                                            <div class="css-178yklu">
+                                            {/* <div class="css-178yklu">
                                                 <input
                                                     color="#E5E5E5"
                                                     value={code}
@@ -77,7 +75,7 @@ export function ModelBox({ visible = false, onClose }) {
                                                     bgcolor="rgba(51, 51, 51, 0.8)"
                                                     className='s-2 css-pu9f8t-Input mask e186zcg20'
                                                 />
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <div>
                                             <span color="#808080" typography="p_regular_12" class="css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0">Нажимая на кнопку Далее, вы соглашаетесь с <a href="https://mycar.kz/terms_of_use.pdf" target="_blank" class="text-decoration-none" className='s-3' rel="noreferrer">Пользовательским соглашение</a> и <a href="https://mycar.kz/privacy_policy.pdf" target="_blank" class="text-decoration-none" className='s-3' rel="noreferrer">Политикой конфиденциальности</a>

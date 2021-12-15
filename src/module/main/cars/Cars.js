@@ -23,7 +23,7 @@ export function Cars({cars}) {
                         </div>
                         <NavLink mode="dark" to={"/car/"+cars[car].id+"/"} target="_blank" className="css-1sg0nkn-CardResultCard-CarResultCardWrapperBase elaysg91">
                             <div className="css-2u7grx-CarResultCardImageWrapper e1s9nk190">
-                                <img src="https://object.pscloud.io/cars-master/publications/photos/8703bc25-5ff8-4e0d-88bd-d30c90b239cc_whyzZk7.jpg" alt="Haval F7" class="css-1b8ut1y-CarResultCardImageComponent e1s9nk191" />
+                                <img src={`${cars[car].images[0]}`} alt="Haval F7" class="css-1b8ut1y-CarResultCardImageComponent e1s9nk191" />
                             </div>
                             <div className="css-1twrlxf-CarResultCardData e1kfkdu90">
                                 <div class="css-12bwtj3-CarResultCardDataTitleWrapper e1e3ishk0">
