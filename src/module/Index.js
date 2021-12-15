@@ -28,7 +28,7 @@ function Index() {
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center'>
                   <NavLink className='ml-4 mr-0 mr-md-2 css-nn640c ezl9qcz0 color-text' to='/'>
-                                            CarsKG
+                                            InvesCore AUTO
                   </NavLink>
                   </div>
                 </div>
