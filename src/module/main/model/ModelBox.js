@@ -1,40 +1,19 @@
 import './css/ModelBox.css'
 import { IMaskInput } from 'react-imask';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { Context } from '../../../index'
 
 
 
-async function loginUser(credentials) {
-    return fetch('https://auto-leasing-bank.herokuapp.com/api/login/', {
-        credentials: "same-origin",
-        method: 'POST',
-        headers: {
-            "Content-Type":"application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Credentials": "true",
-            "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
-            "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-          },
-        body: JSON.stringify({phone:credentials.phone,code:credentials.code})
-    })
-    .then(response => console.log(response.data))
-
-}
 
 
 export function ModelBox({ visible = false, onClose }) {
 
-    const [phone, setPhone] = useState()
+    const [phone, setPhone] = useState('')
 
-    const [code, setCode] = useState()
+    const [code, setCode] = useState('')
 
-    const [data,setData] = useState()
-
-    function handleSubmit(event) {
-        event.preventDefault()
-        let user = { phone, code }
-        loginUser(user)
-    }
+    const {store} = useContext(Context)
 
 
     return (
@@ -48,7 +27,6 @@ export function ModelBox({ visible = false, onClose }) {
                             </svg>
                         </div>
                         <div className="h-100 s-1">
-                            <form onSubmit={handleSubmit}>
                                 <div id="0" className="h-100">
                                     <div className="d-flex flex-column h-100 justify-content-between">
                                         <div>
@@ -62,7 +40,7 @@ export function ModelBox({ visible = false, onClose }) {
                                                     placeholder='Введите номер телефона'
                                                     bgcolor="rgba(51, 51, 51, 0.8)"
                                                     className='s-2 css-pu9f8t-Input mask e186zcg20'
-                                                    mask="(000) 000-000000"
+                                                    mask="+996000000000"
                                                     definitions={{
                                                         '#': /[1-9]/,
                                                     }}
@@ -82,7 +60,7 @@ export function ModelBox({ visible = false, onClose }) {
                                         <div>
                                             <span color="#808080" typography="p_regular_12" class="css-mmm1cf-Typography-interRegular-pRegular12 e1c33kzw0">Нажимая на кнопку Далее, вы соглашаетесь с <a href="https://mycar.kz/terms_of_use.pdf" target="_blank" class="text-decoration-none" className='s-3' rel="noreferrer">Пользовательским соглашение</a> и <a href="https://mycar.kz/privacy_policy.pdf" target="_blank" class="text-decoration-none" className='s-3' rel="noreferrer">Политикой конфиденциальности</a>
                                             </span>
-                                            <button type="submit" className='s-4 d-flex justify-content-between css-1ncqp0c-Root e7wkbvf0' size="48" mode="dark">
+                                            <button type="submit" onClick={()=>store.login(phone,code)} className='s-4 d-flex justify-content-between css-1ncqp0c-Root e7wkbvf0' size="48" mode="dark">
                                                 <span class="css-ajmj03-Label easdwy10">
                                                     <div class="flex-grow-1 justify-content-center">
                                                         <p typography="other_semibold_14" color="rgba(128, 128, 128, 0.6)" class="css-1y2s2kc-Typography-interRegular-buttonSemibold14 e1c33kzw0">Далее</p>
@@ -96,7 +74,6 @@ export function ModelBox({ visible = false, onClose }) {
                                         </div>
                                     </div>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>

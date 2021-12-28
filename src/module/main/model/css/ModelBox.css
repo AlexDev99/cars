@@ -71,7 +71,7 @@ button, input {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.25px;
-    color: rgba(128, 128, 128, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     fill: rgba(128, 128, 128, 0.6);
 }
 
@@ -167,7 +167,7 @@ button, input {
     border-radius: 12px;
     letter-spacing: 0.04em;
     appearance: none;
-    background: none rgba(128, 128, 128, 0.2);
+    background: none rgba(255, 255, 255, 0.986);
     white-space: nowrap;
     transition: background-color 0.1s ease 0s;
     height: 48px;

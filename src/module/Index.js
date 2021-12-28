@@ -7,6 +7,7 @@ import { ModelBox } from './main/model/ModelBox'
 import { Routers } from "./components/routes/Routes";
 import { NavLink } from "react-router-dom";
 import { RegisterBox } from "./main/model/RegisterBox";
+import img from './auto.png'
 
 function Index() {
 
@@ -28,7 +29,7 @@ function Index() {
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center'>
                   <NavLink className='ml-4 mr-0 mr-md-2 css-nn640c ezl9qcz0 color-text' to='/'>
-                                            InvesCore AUTO
+                    InvesCore Auto
                   </NavLink>
                   </div>
                 </div>
@@ -64,10 +65,6 @@ function Index() {
                 <div className="ml-auto">
                   <div className="d-flex flex-column css-kn46u7">
                     <div className="flex-grow-1 align-items-center justify-content-center d-flex">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgba(255, 255, 255, 1)" className="css-1jomyp1-Icon">
-                        <path d="M22.5999 11.29L19.9999 8.69001V5.00001C19.9999 4.45001 19.5499 4.00001 18.9999 4.00001H15.3099L12.7099 1.40001C12.3199 1.01001 11.6899 1.01001 11.2999 1.40001L8.68992 4.00001H4.99992C4.44992 4.00001 3.99992 4.45001 3.99992 5.00001V8.69001L1.39992 11.29C1.00992 11.68 1.00992 12.31 1.39992 12.7L3.99992 15.3V19C3.99992 19.55 4.44992 20 4.99992 20H8.68992L11.2899 22.6C11.6799 22.99 12.3099 22.99 12.6999 22.6L15.2999 20H18.9999C19.5499 20 19.9999 19.55 19.9999 19V15.31L22.5999 12.71C22.9899 12.32 22.9899 11.68 22.5999 11.29ZM17.9199 12.98C17.5799 15.1 16.0699 16.92 14.0399 17.64C12.8299 18.07 11.6299 18.09 10.5399 17.82C10.1299 17.72 10.0599 17.17 10.4099 16.92C11.9799 15.84 12.9999 14.04 12.9999 12C12.9999 9.96001 11.9799 8.16001 10.4199 7.08001C10.0699 6.84001 10.1299 6.29001 10.5499 6.18001C11.6399 5.91001 12.8399 5.93001 14.0499 6.36001C16.0699 7.08001 17.5899 8.90001 17.9299 11.02C17.9799 11.35 17.9999 11.68 17.9999 12C17.9899 12.32 17.9699 12.65 17.9199 12.98Z" fill-opacity="0.4">
-                        </path>
-                      </svg>
                     </div>
                   </div>
                 </div>
@@ -88,11 +85,6 @@ function Index() {
                   <button mode="dark" className="px-0 css-uw4g9o-Root e7wkbvf0" size="40" onClick={() => setModal(true)}>
                     <span className="css-ajmj03-Label easdwy10">
                       <p typography="p_regular_14" color="#E5E5E5" className="css-18e0jtp-Typography-interRegular-pRegular14 e1c33kzw0">Войти</p>
-                    </span>
-                  </button>
-                  <button mode="dark" className="px-0 css-uw4g9o-Root e7wkbvf0" size="40" onClick={() => setRegister(true)}>
-                    <span className="css-ajmj03-Label easdwy10">
-                      <p typography="p_regular_14" color="#E5E5E5" className="css-18e0jtp-Typography-interRegular-pRegular14 e1c33kzw0">/Регистрация</p>
                     </span>
                   </button>
                 </div>

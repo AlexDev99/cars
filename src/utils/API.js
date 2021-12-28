@@ -1,48 +1,28 @@
-import axios from "axios";
-import { HTTP } from "./HTTP";
+import axios from "axios"
 
-// export default axios.create({
-//   baseURL: "https://auto-leasing-bank.herokuapp.com/api/",
-//   responseType: "json"
-// });
-
-const baseURL = 'https://auto-leasing-bank.herokuapp.com/api/'
-
-export function API (method,path) {
-
-    if (method === HTTP.GET){
-       return axios.get(baseURL + path).then(res => res.data)
-    }
-}
+export const API_URL = 'https://auto-leasing-bank.herokuapp.com/api/'
 
 
-const loginUser = userObj => ({
-    type: 'LOGIN_USER',
-    payload: userObj
+const $api = axios.create({
+  withCredentials:true,
+  credentials: "same-origin",
+  baseURL:API_URL,
+  headers: {
+    "Content-Type":"application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+    "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  },
 })
 
-  export const userLoginFetch = user => {
-      console.log(user)
-    return dispatch => {
-      return fetch("https://auto-leasing-bank.herokuapp.com/api/login/", {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({user})
-      })
-        .then(resp => console.log("res" - resp))
-        .then(data => {
-          if (data.message) {
-              console.log("data"-data)
-           //тут ваша логика
-          } else {
-            console.log(data)
 
-            localStorage.setItem("token", data.jwt)
-            dispatch(loginUser(data.user))
-          }
-        })
-    }
+$api.interceptors.request.use(
+  config => {
+    config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`
+    return config
   }
+)
+
+
+export default $api
